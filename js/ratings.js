@@ -1,5 +1,5 @@
 const collect_ratings = () => {
-    const ratings = { 'count': 0, 'sum': 0, 'avrage': 0 };
+    const ratings = { 'count': 0, 'sum': 0, 'average': 0 };
 
     let rating = 0;
 
@@ -19,5 +19,5 @@ const collect_ratings = () => {
 
 document.addEventListener('change', () => {
     const ratings = collect_ratings();
-    document.querySelector('#avearage').value = ratings.average.toFixed(2);
+    document.querySelector('#average').value = ratings.average.toFixed(2);
 });
